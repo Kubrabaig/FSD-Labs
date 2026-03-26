@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Lab 1: Multi-Break Grid</title>
+ <!-- Bootstrap 5 CSS CDN -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+ body { background-color: #f4f7f6; font-family: sans-serif; }
+ .lab-header { background: #0d6efd; color: white; padding: 2rem 0; margin-bottom: 2rem; }
+ /* Style for the grid boxes */
+ .grid-box {
+ background: white;
+ border: 2px solid #dee2e6;
+ border-radius: 5px;
+ padding: 20px;
+ text-align: center;
+ margin-bottom: 1rem;
+ min-height: 100px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-weight: bold;
+ }
+ </style>
+</head>
+<body>
+ <header class="lab-header text-center">
+ <div class="container">
+ <h1>Lab 01: Multi-Break Grid</h1>
+ <p>Mastering Responsive Layouts with Bootstrap 12-Column System</p>
+ </div>
+ </header>
+ <main class="container">
+ <!-- LAB INSTRUCTIONS FOR STUDENTS -->
+ <section class="alert alert-info shadow-sm mb-5">
+ <h5><i class="bi bi-info-circle"></i> Quick Focus Task:</h5>
+ <p>Modify the column classes in the grid below to achieve the following:</p>
+ <ol>
+ <li><strong>Mobile:</strong> 1 item per row (use <code>col-12</code>)</li>
+ <li><strong>Tablets:</strong> 2 items per row (use <code>col-md-6</code>)</li>
+ <li><strong>Desktops:</strong> 3 items per row (use <code>col-lg-4</code>)</li>
+ </ol>
+ </section>
+ <!-- THE GRID SYSTEM -->
+ <div class="row">
+ <!-- Item 1 -->
+ <div class="col-12 col-md-6 col-lg-4">
+ <div class="grid-box shadow-sm">Card 1</div>
+ </div>
+ <!-- Item 2 -->
+ <div class="col-12 col-md-6 col-lg-4">
+ <div class="grid-box shadow-sm">Card 2</div>
+ </div>
+ <!-- Item 3 -->
+ <div class="col-12 col-md-6 col-lg-4">
+ <div class="grid-box shadow-sm">Card 3</div>
+ </div>
+ <!-- Item 4 -->
+ <div class="col-12 col-md-6 col-lg-4">
+ <div class="grid-box shadow-sm">Card 4</div>
+ </div>
+ <!-- Item 5 -->
+ <div class="col-12 col-md-6 col-lg-4">
+ <div class="grid-box shadow-sm">Card 5</div>
+ </div>
+ <!-- Item 6 -->
+ <div class="col-12 col-md-6 col-lg-4">
+ <div class="grid-box shadow-sm">Card 6</div>
+ </div>
+ </div>
+ <!-- EXPLANATION FOR VIVA -->
+ <div class="card mt-5">
+ <div class="card-body">
+ <h5 class="card-title text-primary">Concept Summary</h5>
+ <p class="card-text">
+ Bootstrap uses a <strong>12-column grid</strong>. 
+ If you set a class to <code>col-4</code>, it takes up 4/12 (one-third) of the width. 
+ Responsive prefixes like <code>-md-</code> (medium) and <code>-lg-</code> (large) allow the 
+layout to change dynamically when the screen is resized.
+ </p>
+ </div>
+ </div>
+ </main>
+ <footer class="text-center mt-5 text-muted py-3">
+ <small>Warmup Lab Series &copy; 2026</small>
+ </footer>
+</body>
+</html>
